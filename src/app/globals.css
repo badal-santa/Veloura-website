@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Veloura app palette (mirrors src/theme/colors.ts in the app). */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-ink: #08070c;
+  --color-ink-2: #111019;
+  --color-surface: #191522;
+  --color-surface-light: #211b2b;
+  --color-line: #2a2335;
+  --color-pink: #ff4fa3;
+  --color-pink-light: #ff78ba;
+  --color-violet: #a855f7;
+  --color-peach: #ffb38a;
+  --color-text: #faf8fc;
+  --color-muted: #a8a1b5;
+  --color-subtle: #716a7c;
+  --font-sans: var(--font-jakarta);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ink);
+  color: var(--color-text);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, #ff4fa3, #a855f7 55%, #ffb38a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Soft pink/violet glow behind the hero and section art. */
+.glow {
+  background:
+    radial-gradient(40% 50% at 70% 30%, rgba(255, 79, 163, 0.22), transparent 70%),
+    radial-gradient(35% 45% at 30% 60%, rgba(168, 85, 247, 0.18), transparent 70%);
 }
