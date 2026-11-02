@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <p className="mt-8 text-sm text-subtle">Free, ad-supported, and available for Android.</p>
           </div>
-          <div className="mx-auto w-full max-w-[300px] md:max-w-[340px]">
+          <div className="mx-auto w-full max-w-75 md:max-w-85">
             <PhoneShot name="09-photo-editor" alt="Veloura photo editor with lipstick applied" priority />
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function Home() {
       {/* Veloura Home */}
       <Section title="Make it your Home screen" sub="Optional, and you can switch back any time.">
         <div className="grid items-center gap-10 md:grid-cols-[0.8fr_1.2fr]">
-          <div className="mx-auto w-full max-w-[300px]">
+          <div className="mx-auto w-full max-w-75">
             <PhoneShot name="07-veloura-home" alt="Veloura Home with the Studio card, search and pinned apps" />
           </div>
           <ul className="space-y-5">
@@ -107,7 +107,7 @@ export default function Home() {
 
       {/* Privacy */}
       <Section id="privacy" title="Private by design">
-        <div className="rounded-3xl border border-pink/40 bg-gradient-to-br from-pink/15 to-violet/10 p-7 sm:p-9">
+        <div className="rounded-3xl border border-pink/40 bg-linear-to-br from-pink/15 to-violet/10 p-7 sm:p-9">
           <p className="text-lg font-bold">Your photos never leave your phone.</p>
           <p className="mt-3 max-w-3xl leading-relaxed text-muted">
             Beauty, makeup, face detection, background removal and video trimming all run on your
